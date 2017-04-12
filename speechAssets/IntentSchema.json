@@ -2,6 +2,7 @@
     {"intent": "UpdateAddressIntent", "slots": [{"name": "address", "type": "AMAZON.PostalAddress"}]},
     {"intent": "DefaultSearchIntent"},
     {"intent": "SpecifySearchIntent", "slots": [{"name": "address", "type": "AMAZON.PostalAddress"}]},
+    {"intent": "MoreInfoIntent", "slots": [{"name": "media", "type": "MORE_INFO"}]},
     {"intent": "AMAZON.YesIntent"},
     {"intent": "AMAZON.NoIntent"},
     {"intent": "AMAZON.HelpIntent"},

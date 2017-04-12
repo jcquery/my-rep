@@ -1,3 +1,4 @@
-UpdateAddressIntent
-DefaultSearchIntent
-SpecifySearchIntent
+UpdateAddressIntent update my address to {address}
+DefaultSearchIntent who is my representative
+SpecifySearchIntent who is the representative for {address}
+MoreInfoIntent {media}
