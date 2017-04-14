@@ -3,6 +3,9 @@
 const Alexa = require('alexa-sdk')
 let appId
 
+const searchHandlers = require('./handlers/search.js')
+const infoHandler = require('./handlers/info.js')
+
 exports.handler = function (event, context, callback) {
   const alexa = Alexa.handler(event, context)
 
@@ -10,7 +13,7 @@ exports.handler = function (event, context, callback) {
     alexa.appId = appId
   }
   alexa.dynamoDBTableName = 'tableName'
-  alexa.registerHandlers(launchHandlers)
+  alexa.registerHandlers(launchHandlers, searchHandlers, infoHandler)
   alexa.execute()
 }
 
