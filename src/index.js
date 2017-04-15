@@ -4,7 +4,7 @@ const Alexa = require('alexa-sdk')
 let appId
 
 const searchHandlers = require('./handlers/search.js')
-const infoHandler = require('./handlers/info.js')
+const infoHandlers = require('./handlers/info.js')
 
 exports.handler = function (event, context, callback) {
   const alexa = Alexa.handler(event, context)
@@ -13,16 +13,16 @@ exports.handler = function (event, context, callback) {
     alexa.appId = appId
   }
   alexa.dynamoDBTableName = 'tableName'
-  alexa.registerHandlers(launchHandlers, searchHandlers, infoHandler)
+  alexa.registerHandlers(basicHandlers, searchHandlers, infoHandlers)
   alexa.execute()
 }
 
 const states = {
-  RESULTS: '_RESULTS',
-  SEARCHING: '_SEARCHING'
+  INFO: '_INFO',
+  SEARCH: '_SEARCH'
 }
 
-const launchHandlers = {
+const basicHandlers = {
   'LaunchRequest': function () {
     if (!this.attributes['address']) {
       this.attributes['speechOutput'] = 'Welcome to MyRep. If you\'d like to set a default address, you can say, "set my address to," followed by your address. Or you can ask for the representatives for a particular address.'
@@ -33,5 +33,23 @@ const launchHandlers = {
     }
 
     this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptOutput'])
+  },
+  'AMAZON.HelpIntent': function () {
+    this.attributes['speechOutput'] = 'You can search for congressional representatives by address by asking, "who is the representative for..." followed by an address. You can also search for senators or congresspeople. If you have a saved address, you can ask, "who is my representative?" or "who are my senators?" If you do not have a saved address, you can say "set my address to..." followed by an address to save your address for future searches. To get contact and term information for a congressperson, ask for information about them by name. For example, "tell me about Maria Cantwell," or "what is Maria Cantwell\'s address?" If you\'re done searching, you can say "cancel" or "stop."'
+    this.attributes['repromptOutput'] = this.attributes['speechOutput']
+
+    this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptOutput'])
+  },
+  'AMAZON.RepeatIntent': function () {
+    this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptOutput'])
+  },
+  'AMAZON.StopIntent': function () {
+    this.emit('SessionEndedRequest')
+  },
+  'AMAZON.CancelIntent': function () {
+    this.emit('SessionEndedRequest')
+  },
+  'SessionEndedRequest': function () {
+    this.emit(':tell', 'Goodbye!')
   }
 }
