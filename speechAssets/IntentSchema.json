@@ -1,11 +1,9 @@
 {"intents": [
-    {"intent": "UpdateAddressIntent", "slots": [{"name": "address", "type": "AMAZON.PostalAddress"}, {"name": "legislators", "type": "LEGISLATORS"}]},
     {"intent": "DefaultSearchIntent"},
     {"intent": "SpecifySearchIntent", "slots": [{"name": "address", "type": "AMAZON.PostalAddress"},
     {"name": "legislators", "type": "LEGISLATORS"}]},
-    {"intent": "MoreInfoIntent", "slots": [{"name": "moreInfo", "type": "MORE_INFO"}]},
-    {"intent": "AMAZON.YesIntent"},
-    {"intent": "AMAZON.NoIntent"},
+    {"intent": "NameSearchIntent", "slots": [{"name": "repName", "type": "REP_NAME"}]},
+    {"intent": "InfoSearchIntent", "slots": [{"name": "info", "type": "INFO"}, {"name": "repName", "type": "REP_NAME"}]},
     {"intent": "AMAZON.HelpIntent"},
     {"intent": "AMAZON.StopIntent"},
     {"intent": "AMAZON.CancelIntent"}
