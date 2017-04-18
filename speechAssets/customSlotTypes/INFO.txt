@@ -9,3 +9,5 @@ number
 address
 mailing address
 term
+party
+party affliation
