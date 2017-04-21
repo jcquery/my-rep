@@ -6,7 +6,9 @@
   "author": "John Carney <jcarney000@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "alexa-sdk": "^1.0.8"
+    "alexa-sdk": "^1.0.8",
+    "axios": "^0.16.1",
+    "dotenv": "^4.0.0"
   },
   "devDependencies": {
     "standard": "^10.0.1"
