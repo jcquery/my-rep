@@ -62,13 +62,14 @@ function createEntries (obj) {
 
   Promise.map(promiseArr, (put) => put, { concurrency: 3 })
     .then(() => {
-      fsp.writeFile(path.join(__dirname, '/handlers/congressMap.json'), JSON.stringify(obj))
+      fsp.writeFile(path.join(__dirname, '/congressMap.json'), JSON.stringify(obj))
     })
     .then(() => {
       console.log('success')
     })
     .catch((err) => {
-      console.log(err)
+      throw err
     })
 }
+
 getReps()
