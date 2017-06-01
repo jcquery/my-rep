@@ -1,11 +1,11 @@
 'use strict'
 
-const fsp = require('fs-promise')
-const axios = require('axios')
-const dotenv = require('dotenv').config()
+const fsp = require('../src/node_modules/fs-promise')
+const axios = require('../src/node_modules/axios')
+const dotenv = require('../src/node_modules/dotenv').config()
 const path = require('path')
-const AWS = require('aws-sdk')
-const Promise = require('bluebird')
+const AWS = require('../src/node_modules/aws-sdk')
+const Promise = require('../src/node_modules/bluebird')
 
 AWS.config.update({
   region: 'us-east-1',
