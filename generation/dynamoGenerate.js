@@ -23,8 +23,8 @@ function getReps () {
       console.log('got \'em')
       return createEntries(buildMap(res.data.results))
     })
-    .catch((error) => {
-      return { error }
+    .catch((err) => {
+      throw { err }
     })
 }
 function buildMap (list) {
