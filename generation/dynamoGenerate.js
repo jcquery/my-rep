@@ -2,19 +2,9 @@
 
 const fsp = require('../src/node_modules/fs-promise')
 const axios = require('../src/node_modules/axios')
-const dotenv = require('../src/node_modules/dotenv').config()
 const path = require('path')
-const AWS = require('../src/node_modules/aws-sdk')
 const Promise = require('../src/node_modules/bluebird')
-
-AWS.config.update({
-  region: 'us-east-1',
-  accessKeyId: process.env.AWS_FULL_ID,
-  secretAccessKey: process.env.AWS_FULL_SECRET
-})
-AWS.config.setPromisesDependency(Promise)
-
-const table = new AWS.DynamoDB({apiVersion: '2012-08-10', params: {TableName: 'represent'}})
+const dynamos = require('./dynamoHelpers')
 
 function getReps () {
   console.log('getting reps')
@@ -49,14 +39,7 @@ function createEntries (obj) {
   var promiseArr = []
 
   Object.keys(obj).forEach((name) => {
-    var params = {
-      Item: {
-        rep_name: { S: name },
-        rep_id: { S: obj[name].join(',') }
-      }
-    }
-
-    promiseArr.push(table.putItem(params).promise())
+    promiseArr.push(dynamos.put({ name, id: obj[name] }))
   })
   console.log('created promises')
 
@@ -68,7 +51,8 @@ function createEntries (obj) {
       console.log('success')
     })
     .catch((err) => {
-      throw err
+      console.error(err)
+      throw
     })
 }
 

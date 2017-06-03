@@ -1,7 +1,6 @@
 'use strict'
 
 const dotenv = require('../src/node_modules/dotenv').config()
-const path = require('path')
 const AWS = require('../src/node_modules/aws-sdk')
 const Promise = require('../src/node_modules/bluebird')
 
@@ -15,7 +14,7 @@ AWS.config.setPromisesDependency(Promise)
 const table = new AWS.DynamoDB({apiVersion: '2012-08-10', params: {TableName: 'represent'}})
 
 const dynamos = {
-  repScan: function () {
+  scan: function () {
     const params = {
       AttributesToGet: ['rep_name', 'rep_id']
     }
@@ -33,6 +32,27 @@ const dynamos = {
     }
   
     table.scan(params, formatResults)
+  },
+
+  put: function(rep) {
+    const params = {
+      Item: {
+        rep_name: { S: rep.name },
+        rep_id: { S: rep.id.join(',') }
+      }
+    }
+
+    return table.putItem(params).promise()
+  },
+
+  delete: function(name) {
+    const params = {
+      Key: {
+        rep_name: { S: name }
+      }
+    }
+
+    return table.deleteItem(params).promise() 
   }
 }
 
