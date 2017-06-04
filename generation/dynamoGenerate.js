@@ -88,9 +88,12 @@ function createEntries (current) {
       Promise.map(promiseArr, (put) => put, { concurrency: 3 })
     })
  
-    // .then(() => {
-    //   fsp.writeFile(path.join(__dirname, '/congressMap.json'), JSON.stringify(obj))
-    // })
+    .then(() => {
+      console.log('writing to slot')
+      const toWrite = Object.keys(current).join('\n')
+
+      fsp.writeFile(path.join(__dirname, '../speechAssets/customSlotTypes/REP_NAME.txt'), toWrite)
+    })
     .then(() => {
       console.log('success')
     })

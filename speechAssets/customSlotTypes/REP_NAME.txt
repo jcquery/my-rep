@@ -1,542 +1,817 @@
-Lamar Alexander
-Roy Blunt
-Sherrod Brown
-Richard Burr
-Tammy Baldwin
-John Boozman
-John Barrasso
-Michael Bennet
-Richard Blumenthal
-Cory Booker
-Maria Cantwell
-Benjamin Cardin
-Thomas Carper
-Thad Cochran
-Michael Crapo
-Susan Collins
-Shelley Capito
-John Cornyn
-Bob Casey
-Bob Corker
-Bill Cassidy
-Christopher Coons
-Tom Cotton
-Ted Cruz
-Catherine Cortez Masto
-Richard Durbin
-Joe Donnelly
-Steve Daines
-Tammy Duckworth
-Michael Enzi
-Joni Ernst
-Dianne Feinstein
-Jeff Flake
-Al Franken
-Deb Fischer
-Lindsey Graham
-Charles Grassley
-Kirsten Gillibrand
-Cory Gardner
-Orrin Hatch
-Dean Heller
-Mazie Hirono
-Martin Heinrich
-John Hoeven
-Heidi Heitkamp
-Kamala Harris
-Margaret Hassan
-James Inhofe
-Johnny Isakson
-Ron Johnson
-Amy Klobuchar
-Angus King
-Tim Kaine
-John Kennedy
-Patrick Leahy
-James Lankford
-Mike Lee
-Edward Markey
-John McCain
-Mitch McConnell
-Robert Menendez
-Jerry Moran
-Patty Murray
-Lisa Murkowski
-Christopher Murphy
-Claire McCaskill
-Jeff Merkley
-Joe Manchin III
-Bill Nelson
-Rob Portman
-Gary Peters
-Rand Paul
-David Perdue
-Jack Reed
-Pat Roberts
-Jim Risch
-Marco Rubio
-Mike Rounds
-Bernard Sanders
-Charles Schumer
-Richard Shelby
-Debbie Stabenow
-Jeff Sessions
-Jeanne Shaheen
-Tim Scott
-Brian Schatz
-Ben Sasse
-Dan Sullivan
+Ron Estes
 Luther Strange
-John Thune
-Patrick Toomey
-Jon Tester
-Thom Tillis
-Tom Udall
-Chris Van Hollen
-Roger Wicker
-Ron Wyden
-Sheldon Whitehouse
-Mark Warner
-Elizabeth Warren
-Todd Young
-Robert Aderholt
-Justin Amash
-Mark Amodei
-Alma Adams
-Pete Aguilar
-Rick Allen
-Ralph Abraham
-Jodey Arrington
-Joe Barton
-Xavier Becerra
-Sanford Bishop Jr.
-Earl Blumenauer
-Kevin Brady
-Robert Brady
-Marsha Blackburn
-Madeleine Bordallo
-Michael Burgess
-Rob Bishop
-G. Butterfield
-Gus Bilirakis
-Vern Buchanan
-Lou Barletta
-Karen Bass
-Diane Black
-Mo Brooks
-Larry Bucshon
-Suzanne Bonamici
-Joyce Beatty
-Andy Barr
-Jim Bridenstine
-Susan Brooks
-Julia Brownley
-Cheri Bustos
-Ami Bera
-Bradley Byrne
-David Brat
-Brian Babin
-Donald Beyer
-Mike Bishop
-Rod Blum
-Mike Bost
-Brendan Boyle
-Ken Buck
-Don Bacon
-Jim Banks
-Nanette Barragán
-Jack Bergman
-Andy Biggs
-Lisa Blunt Rochester
-Anthony Brown
-Ted Budd
-Ken Calvert
-Steven Chabot
-James Clyburn
-John Conyers Jr.
-Jim Cooper
-Elijah Cummings
-Michael Capuano
-Joseph Crowley
-John Culberson
-William Clay
-John Carter
-Tom Cole
-Jim Costa
-Emanuel Cleaver II
-K. Conaway
-Henry Cuellar
-Kathy Castor
-Yvette Clarke
-Steve Cohen
-Joe Courtney
-André Carson
-Jason Chaffetz
-Mike Coffman
-Gerald Connolly
-Judy Chu
-David Cicilline
-Rick Crawford
-Matt Cartwright
-Joaquín Castro
-Chris Collins
-Doug Collins
-Paul Cook
-Kevin Cramer
-Tony Cardenas
-Katherine Clark
-Buddy Carter
-Barbara Comstock
-Ryan Costello
-Carlos Curbelo
-James Comer
 Liz Cheney
-J. Correa
-Charlie Crist
-Salud Carbajal
-Danny Davis
-Peter DeFazio
-Diana DeGette
-Rosa DeLauro
-Lloyd Doggett
-Mike Doyle
-John Duncan Jr.
-Susan Davis
-Mario Diaz-Balart
-Charlie Dent
-Ted Deutch
-Jeffrey Denham
-Sean Duffy
-Jeffrey Duncan
-Scott DesJarlais
-Suzan DelBene
-Rodney Davis
-John Delaney
-Ron DeSantis
-Mark DeSaulnier
-Debbie Dingell
-Daniel Donovan
-Warren Davidson
-Val Demings
-Neal Dunn
-Eliot Engel
-Anna Eshoo
-Keith Ellison
-Elizabeth Esty
-Tom Emmer
-Dwight Evans
-Adriano Espaillat
-Rodney Frelinghuysen
-Trent Franks
-Jeff Fortenberry
-Virginia Foxx
-Bill Foster
-Marcia Fudge
-Chuck Fleischmann
-Blake Farenthold
-Bill Flores
-Lois Frankel
-John Faso
-A. Ferguson
-Brian Fitzpatrick
-Robert Goodlatte
-Kay Granger
-Gene Green
-Luis Gutiérrez
-Sam Graves
-Raúl Grijalva
-Louie Gohmert
-Al Green
-Brett Guthrie
-John Garamendi
-Tom Graves
-Bob Gibbs
-Paul Gosar
-Trey Gowdy
-Morgan Griffith
-Tulsi Gabbard
-Ruben Gallego
-Glenn Grothman
-Garret Graves
-Matt Gaetz
 Mike Gallagher
-Thomas Garrett
-Vicente Gonzalez
-Jenniffer González-Colón
-Josh Gottheimer
-Alcee Hastings
-Steny Hoyer
-Jeb Hensarling
-Brian Higgins
-Gregg Harper
-Jim Himes
-Duncan Hunter
-Colleen Hanabusa
-Andy Harris
-Vicky Hartzler
-Jaime Herrera Beutler
-Bill Huizenga
-Randy Hultgren
-Denny Heck
-George Holding
-Richard Hudson
-Jared Huffman
-Jody Hice
-French Hill
-Will Hurd
-Trey Hollingsworth
-Clay Higgins
-Darrell Issa
-Sheila Jackson-Lee
-Eddie Johnson
-Sam Johnson
-Walter Jones
-Hank Johnson
-Jim Jordan
-Lynn Jenkins
-Bill Johnson
-Hakeem Jeffries
-Dave Joyce
-Evan Jenkins
 Pramila Jayapal
-Mike Johnson
-Marcy Kaptur
-Ron Kind
-Peter King
-Steve King
-Bill Keating
-Mike Kelly
-Adam Kinzinger
-Joseph Kennedy III
-Dan Kildee
-Derek Kilmer
-Ann Kuster
-Robin Kelly
-John Katko
-Steve Knight
-Trent Kelly
-Ro Khanna
-Ruben Kihuen
-Raja Krishnamoorthi
-David Kustoff
-Sander Levin
-John Lewis
-Zoe Lofgren
-Nita Lowey
-Frank Lucas
-Barbara Lee
-Frank LoBiondo
-John Larson
-Jim Langevin
-Rick Larsen
-Stephen Lynch
-Daniel Lipinski
-Doug Lamborn
-Dave Loebsack
-Robert Latta
-Leonard Lance
-Blaine Luetkemeyer
-Ben Luján
-Raúl Labrador
-Billy Long
-Doug LaMalfa
-Alan Lowenthal
-Michelle Lujan Grisham
-Brenda Lawrence
-Ted Lieu
-Barry Loudermilk
-Mia Love
-Darin LaHood
-Al Lawson
-Jason Lewis
-Carolyn Maloney
-Jim McGovern
-Gregory Meeks
-Betty McCollum
-Tim Murphy
-Patrick McHenry
-Michael McCaul
-Kenny Marchant
-Cathy McMorris Rodgers
-Gwen Moore
-Doris Matsui
-Kevin McCarthy
-Jerry McNerney
-Tom McClintock
-Tom Marino
-David McKinley
-Pat Meehan
-Mick Mulvaney
-Thomas Massie
-Sean Maloney
-Mark Meadows
-Grace Meng
-Luke Messer
-Markwayne Mullin
-Tom MacArthur
-John Moolenaar
-Alex Mooney
-Seth Moulton
-Martha McSally
-Roger Marshall
-Brian Mast
+Thomas Garrett
 A. McEachin
-Paul Mitchell
-Stephanie Murphy
-Jerrold Nadler
-Richard Neal
-Rick Nolan
-Eleanor Norton
-Grace Napolitano
-Devin Nunes
-Kristi Noem
-Donald Norcross
-Dan Newhouse
-Pete Olson
-Beto O&#39;Rourke
-Tom O&#39;Halleran
-Frank Pallone
-Bill Pascrell Jr.
-Nancy Pelosi
-Collin Peterson
-David Price
-Steve Pearce
-Tom Price
-Ted Poe
-Ed Perlmutter
-Erik Paulsen
-Chellie Pingree
-Jared Polis
-Bill Posey
-Steven Palazzo
-Mike Pompeo
-Donald Payne Jr.
-Scott Perry
-Robert Pittenger
-Mark Pocan
-Scott Peters
-Gary Palmer
-Stacey Plaskett
-Bruce Poliquin
-Jimmy Panetta
-Mike Quigley
-Harold Rogers
-Dana Rohrabacher
-Ileana Ros-Lehtinen
-Lucille Roybal-Allard
-Edward Royce
-Bobby Rush
-Paul Ryan
-Mike Rogers
-C.A. Dutch Ruppersberger
-Tim Ryan
-Dave Reichert
-Peter Roskam
-Phil Roe
-Tom Rooney
-Tom Reed
-Jim Renacci
-Cedric Richmond
-Martha Roby
-Todd Rokita
-Dennis Ross
-Tom Rice
-Keith Rothfus
-Raul Ruiz
-Amata Radewagen
-John Ratcliffe
-Kathleen Rice
-David Rouzer
-Steve Russell
-Jamie Raskin
-Francis Rooney
-Jacky Rosen
-John Rutherford
-Mark Sanford
-Robert Scott
-F. Sensenbrenner
-José Serrano
-Pete Sessions
-Brad Sherman
-John Shimkus
-Louise Slaughter
-Adam Smith
-Christopher Smith
-Lamar Smith
-Jan Schakowsky
-Mike Simpson
-Adam Schiff
-Bill Shuster
-Linda Sánchez
-David Scott
-Albio Sires
-John Sarbanes
-Carol Shea-Porter
-Adrian Smith
-Jackie Speier
-Steve Scalise
-Gregorio &#39;Kilili&#39; Sablan
-Kurt Schrader
-David Schweikert
-Terri Sewell
-Steve Stivers
-Austin Scott
-Brad Schneider
-Kyrsten Sinema
-Chris Stewart
-Eric Swalwell
-Jason Smith
-Elise Stefanik
+A. Donald McEachin
+Scott Taylor
+Jodey Arrington
+Vicente Gonzalez
+David Kustoff
+Jenniffer González-Colón
 Lloyd Smucker
-Darren Soto
+Brian Fitzpatrick
+Claudia Tenney
+John Faso
+Adriano Espaillat
 Thomas Suozzi
-Bennie Thompson
-William Thornberry
-Mike Thompson
-Pat Tiberi
-Michael Turner
-Niki Tsongas
-Glenn Thompson
+Ruben Kihuen
+Jacky Rosen
+Josh Gottheimer
+Don Bacon
+Ted Budd
+Jason Lewis
+Paul Mitchell
+Jack Bergman
+Jamie Raskin
+Anthony Brown
+Mike Johnson
+Clay Higgins
+Roger Marshall
+Trey Hollingsworth
+Jim Banks
+Raja Krishnamoorthi
+A. Ferguson
+A. Drew Ferguson
+A. Ferguson IV
+Francis Rooney
+Brian Mast
+Charlie Crist
+Val Demings
+Darren Soto
+Stephanie Murphy
+Al Lawson
+John Rutherford
+Neal Dunn
+Matt Gaetz
+Lisa Blunt Rochester
+J. Correa
+J. Luis Correa
+Nanette Barragán
+Salud Carbajal
+Jimmy Panetta
+Ro Khanna
+Andy Biggs
+Tom O'Halleran
+Carol Shea-Porter
+Bradley Schneider
+Bradley S. Schneider
+Catherine Cortez Masto
+Margaret Hassan
+Margaret Wood Hassan
+Maggie Hassan
+John Kennedy
+John Neely Kennedy
+Kamala Harris
+Dwight Evans
+James Comer
+Colleen Hanabusa
+Colleen W. Hanabusa
+Warren Davidson
+Darin LaHood
+Trent Kelly
+Daniel Donovan
+Daniel M. Donovan
+Daniel Donovan Jr.
+Benjamin Sasse
+Benjamin Eric Sasse
+Mark Walker
+Mike Rounds
+Thom Tillis
+Joni Ernst
+David Perdue
+Dan Sullivan
+Aumua Amata
+Del. Aumua Amata
+Evan Jenkins
+Alex Mooney
+Glenn Grothman
+Dan Newhouse
+Stacey Plaskett
+Del. Stacey Plaskett
+Barbara Comstock
+Donald Beyer
+Mia Love
+Brian Babin
+Will Hurd
+John Ratcliffe
+Brendan Boyle
+Ryan Costello
+Steve Russell
+John Katko
+Elise Stefanik
+Kathleen Rice
+Lee Zeldin
+Bonnie Watson Coleman
+Tom MacArthur
+David Rouzer
+Tom Emmer
+Brenda Lawrence
+Debbie Dingell
+Dave Trott
+Mike Bishop
+John Moolenaar
+Bruce Poliquin
+Seth Moulton
+Garret Graves
+Ralph Abraham
+Mike Bost
+David Young
+Rod Blum
+Rick Allen
+Barry Loudermilk
+Jody Hice
+Buddy Carter
+Carlos Curbelo
+Ken Buck
+Mimi Walters
+Norma Torres
+Ted Lieu
+Pete Aguilar
+Steve Knight
+Mark DeSaulnier
+Ruben Gallego
+Martha McSally
+Bruce Westerman
+French Hill
+Gary Palmer
+Alma Adams
+Donald Norcross
+Donald W. Norcross
+David Brat
+David Alan Brat
+Dave Brat
+Bradley Byrne
+Katherine Clark
+Katherine M. Clark
+Cory Booker
+Cory Anthony Booker
+Jason Smith
+Jason T. Smith
+Marshall Sanford
+Mark Sanford
+Robin Kelly
+Mark Pocan
+Denny Heck
+Derek Kilmer
+Timothy Kaine
+Chris Stewart
+Filemon Vela
+Marc Veasey
+Marc A. Veasey
+Roger Williams
+Joaquin Castro
+Beto O'Rourke
+Randy Weber
+Randy K. Weber
+Ted Cruz
+Tom Rice
+Matthew Cartwright
+Matthew A. Cartwright
+Keith Rothfus
+Keith J. Rothfus
+Scott Perry
+Markwayne Mullin
+Jim Bridenstine
+David Joyce
+David P. Joyce
+Joyce Beatty
+Brad Wenstrup
+Brad R. Wenstrup
+Chris Collins
+Sean Maloney
+Sean Patrick Maloney
+Hakeem Jeffries
+Hakeem S. Jeffries
+Grace Meng
+Michelle Lujan Grisham
+Ann Kuster
+Ann M. Kuster
+Deb Fischer
+Kevin Cramer
+Heidi Heitkamp
+George Holding
+Mark Meadows
+Robert Pittenger
+Richard Hudson
+Steve Daines
+Ann Wagner
+Richard Nolan
+Richard M. Nolan
+Daniel Kildee
+Daniel T. Kildee
+Angus King
+John Delaney
+John K. Delaney
+Joseph Kennedy
+Joseph P. Kennedy
+Joseph Kennedy III
+Elizabeth Warren
+Garland Barr
+Andy Barr
+Luke Messer
+Susan Brooks
+Susan W. Brooks
+Jackie Walorski
+Cheri Bustos
+Rodney Davis
+Tammy Duckworth
+Tulsi Gabbard
+Doug Collins
+Lois Frankel
+Ron DeSantis
+Ted Yoho
+Ted S. Yoho
+Elizabeth Esty
+Elizabeth H. Esty
+Scott Peters
+Scott H. Peters
+Juan Vargas
+Alan Lowenthal
+Alan S. Lowenthal
+Mark Takano
+Raul Ruiz
+Tony Cárdenas
+Julia Brownley
+David Valadao
+David G. Valadao
+Eric Swalwell
+Paul Cook
+Ami Bera
+Jared Huffman
+Doug LaMalfa
+Kyrsten Sinema
+Tom Cotton
 Dina Titus
+Bill Foster
+Brian Schatz
+Brian Emanuel Schatz
+Donald Payne
+Donald M. Payne
+Donald Payne Jr.
+Thomas Massie
+Suzan DelBene
+Suzan K. DelBene
+Suzanne Bonamici
+Mark Amodei
+Mark E. Amodei
+Dean Heller
+Todd Young
+Todd C. Young
+Don Young
+Don E. Young
+Kevin Yoder
+John Yarmuth
+John A. Yarmuth
+Ron Wyden
+Rob Woodall
+Steve Womack
+Robert Wittman
+Robert J. Wittman
+Frederica Wilson
+Frederica S. Wilson
+Joe Wilson
+Joe G. Wilson
+Peter Welch
+Daniel Webster
+Maxine Waters
+Debbie Wasserman Schultz
+Timothy Walz
+Timothy James Walz
+Greg Walden
+Greg P. Walden
+Tim Walberg
+Peter Visclosky
+Peter J. Visclosky
+Nydia Velázquez
+Nydia M. Velázquez
+Chris Van Hollen
+Chris Van Hollen Jr.
+Fred Upton
+Fred Stephen Upton
+Michael Turner
+Michael R. Turner
+Niki Tsongas
+Niki S. Tsongas
+Patrick Toomey
+Patrick J. Toomey
+Pat Toomey
 Paul Tonko
 Scott Tipton
-Mark Takano
-Norma Torres
-Dave Trott
-Scott Taylor
-Claudia Tenney
-Fred Upton
-Nydia Velázquez
-Peter Visclosky
-David Valadao
-Juan Vargas
-Marc Veasey
-Filemon Vela
-Maxine Waters
-Greg Walden
-Joe Wilson
-Debbie Wasserman Schultz
-Tim Walberg
-Tim Walz
-Peter Welch
-Robert Wittman
-Daniel Webster
-Frederica Wilson
-Steve Womack
-Rob Woodall
-Ann Wagner
-Jackie Walorski
-Randy Weber
-Brad Wenstrup
-Roger Williams
-Mark Walker
-Mimi Walters
-Bruce Westerman
-Bonnie Watson Coleman
-Don Young
-John Yarmuth
-Kevin Yoder
-Ted Yoho
-David Young
-Lee Zeldin
-Ryan Zinke
+Scott R. Tipton
+Patrick Tiberi
+Patrick J. Tiberi
+Pat Tiberi
+John Thune
+Mac Thornberry
+Mac M. Thornberry
+Glenn Thompson
+Mike Thompson
+Mike Michael Thompson
+Bennie Thompson
+Bennie G. Thompson
+Linda Sánchez
+Linda T. Sánchez
+Steve Stivers
+Jackie Speier
+Lamar Smith
+Lamar S. Smith
+Christopher Smith
+Christopher H. Smith
+Chris Smith
+Adrian Smith
+Adam Smith
+Louise Slaughter
+Louise McIntosh Slaughter
+Albio Sires
+Michael Simpson
+Michael K. Simpson
+Mike Simpson
+Bill Shuster
+John Shimkus
+John M. Shimkus
+Brad Sherman
+Brad J. Sherman
+Richard Shelby
+Richard C. Shelby
+Terri Sewell
+Terri A. Sewell
+Pete Sessions
+Pete A. Sessions
+José Serrano
+José E. Serrano
+F. Sensenbrenner
+F. James Sensenbrenner
+F. Sensenbrenner Jr.
+Tim Scott
+Robert Scott
+Robert C. Scott
+Bobby Scott
+David Scott
+Austin Scott
+David Schweikert
+Charles Schumer
+Charles E. Schumer
+Chuck Schumer
+Kurt Schrader
+Adam Schiff
+Adam B. Schiff
+Janice Schakowsky
+Janice D. Schakowsky
+Jan Schakowsky
+Steve Scalise
+Steve Joseph Scalise
+John Sarbanes
+John P. Sarbanes
+Gregorio Sablan
+Del. Gregorio Sablan
+Gregorio Kilili Camacho Sablan
+Tim Ryan
+Tim J. Ryan
+Paul Ryan
+Paul D. Ryan
+Bobby Rush
+Bobby L. Rush
+C. Ruppersberger
+C. A. Dutch Ruppersberger
+Marco Rubio
+Edward Royce
+Edward R. Royce
+Ed Royce
+Lucille Roybal-Allard
+Dennis Ross
+Dennis A. Ross
+Peter Roskam
+Peter J. Roskam
+Ileana Ros-Lehtinen
+Thomas Rooney
+Thomas J. Rooney
+Todd Rokita
+Dana Rohrabacher
+Dana T. Rohrabacher
+Mike Rogers
+Harold Rogers
+Hal Rogers
+David Roe
+David P. Roe
+Phil Roe
+Martha Roby
+Cedric Richmond
+Cedric L. Richmond
+James Renacci
+James B. Renacci
+David Reichert
+David G. Reichert
+Tom Reed
+Tom W. Reed
+Tom Reed II
+Mike Quigley
+David Price
+David E. Price
+Bill Posey
+Robert Portman
+Robert J. Portman
+Rob Portman
+Jared Polis
+Ted Poe
+Chellie Pingree
+Collin Peterson
+Collin Clark Peterson
+Gary Peters
+Gary C. Peters
+Ed Perlmutter
+Nancy Pelosi
+Stevan Pearce
+Stevan E. Pearce
+Steve Pearce
+Erik Paulsen
+Rand Paul
+Bill Pascrell
+Bill J. Pascrell
+Bill Pascrell Jr.
+Frank Pallone
+Frank J. Pallone
+Frank Pallone Jr.
+Steven Palazzo
+Steven M. Palazzo
+Pete Olson
+Devin Nunes
+Devin G. Nunes
+Eleanor Norton
+Del. Eleanor Norton
+Eleanor Holmes Norton
+Kristi Noem
+Kristi L. Noem
+Richard Neal
+Richard E. Neal
+Grace Napolitano
+Grace F. Napolitano
+Jerrold Nadler
+Jerrold L. Nadler
+Patty Murray
+Tim Murphy
+Christopher Murphy
+Christopher S. Murphy
+Lisa Murkowski
+Lisa A. Murkowski
+Jerry Moran
+Gwen Moore
+Gregory Meeks
+Gregory W. Meeks
+Patrick Meehan
+Jerry McNerney
+Cathy McMorris Rodgers
+David McKinley
+David B. McKinley
+Patrick McHenry
+Patrick T. McHenry
+James McGovern
+James P. McGovern
+Jim McGovern
+Betty McCollum
+Betty Louise McCollum
+Tom McClintock
+Michael McCaul
+Michael T. McCaul
+Kevin McCarthy
+John McCain
+John S. McCain
+Doris Matsui
+Doris O. Matsui
+Edward Markey
+Edward J. Markey
+Ed Markey
+Tom Marino
+Kenny Marchant
+Kenny Ewell Marchant
+Carolyn Maloney
+Carolyn B. Maloney
+Stephen Lynch
+Stephen F. Lynch
+Ben Luján
+Ben Ray Luján
+Blaine Luetkemeyer
+Frank Lucas
+Frank D. Lucas
+Nita Lowey
+Nita M. Lowey
+Billy Long
+Zoe Lofgren
+David Loebsack
+Frank LoBiondo
+Frank A. LoBiondo
+Daniel Lipinski
+Daniel William Lipinski
+John Lewis
+John R. Lewis
+Sander Levin
+Sander M. Levin
+Mike Lee
+Barbara Lee
+Patrick Leahy
+Patrick J. Leahy
+Robert Latta
+Robert E. Latta
+John Larson
+John B. Larson
+Rick Larsen
+James Lankford
+James Langevin
+James R. Langevin
+Jim Langevin
+Leonard Lance
+Doug Lamborn
+Raúl Labrador
+Raúl R. Labrador
+Adam Kinzinger
+Steve King
+Steve A. King
+Peter King
+Peter T. King
+Pete King
+Ron Kind
+Ron James Kind
+Mike Kelly
+William Keating
+William R. Keating
+Marcy Kaptur
+Jim Jordan
+Walter Jones
+Walter B. Jones
+Walter Jones Jr.
+Sam Johnson
+Sam Robert Johnson
+Ron Johnson
+Henry Johnson
+Henry C. Johnson
+Henry Johnson Jr.
+Hank Johnson
+Eddie Johnson
+Eddie Bernice Johnson
+Bill Johnson
+Lynn Jenkins
+Sheila Jackson Lee
+Darrell Issa
+Darrell E. Issa
+John Isakson
+John H. Isakson
+Johnny Isakson
+Duncan Hunter
+Duncan D. Hunter
+Randy Hultgren
+Bill Huizenga
+Steny Hoyer
+Steny H. Hoyer
+John Hoeven
+Mazie Hirono
+Mazie K. Hirono
+James Himes
+James A. Himes
+Brian Higgins
+Brian M. Higgins
+Jaime Herrera Beutler
+Jeb Hensarling
+Martin Heinrich
+Alcee Hastings
+Alcee L. Hastings
+Vicky Hartzler
+Andy Harris
+Gregg Harper
+Luis Gutiérrez
+Luis V. Gutiérrez
+Brett Guthrie
+Raúl Grijalva
+Raúl M. Grijalva
+H. Griffith
+H. Morgan Griffith
+Gene Green
+Gene Eugene Green
+Al Green
+Tom Graves
+Sam Graves
+Sam B. Graves
+Charles Grassley
+Charles E. Grassley
+Chuck Grassley
+Kay Granger
+Trey Gowdy
+Paul Gosar
+Paul A. Gosar
+Bob Goodlatte
+Bob W. Goodlatte
+Louie Gohmert
+Louie B. Gohmert
+Louie Gohmert Jr.
+Bob Gibbs
+Cory Gardner
+John Garamendi
+Marcia Fudge
+Marcia L. Fudge
+Rodney Frelinghuysen
+Rodney P. Frelinghuysen
+Trent Franks
+Virginia Foxx
+Jeff Fortenberry
+Jeff Lane Fortenberry
+Bill Flores
+Charles Fleischmann
+Charles J. Fleischmann
+Chuck Fleischmann
+Jeff Flake
+Blake Farenthold
+Anna Eshoo
+Anna G. Eshoo
+Eliot Engel
+Eliot L. Engel
+Keith Ellison
+Keith Maurice Ellison
+John Duncan
+John J. Duncan
+John Duncan Jr.
+Jimmy Duncan
+Jeff Duncan
+Sean Duffy
+Sean P. Duffy
+Michael Doyle
+Michael F. Doyle
+Michael Doyle Jr.
+Mike Doyle
+Joe Donnelly
+Lloyd Doggett
+Lloyd A. Doggett
+Mario Diaz-Balart
+Theodore Deutch
+Theodore E. Deutch
+Scott DesJarlais
+Charles Dent
+Charles W. Dent
+Jeff Denham
+Rosa DeLauro
+Rosa L. DeLauro
+Diana DeGette
+Diana L. DeGette
+Peter DeFazio
+Peter A. DeFazio
+Susan Davis
+Susan A. Davis
+Danny Davis
+Danny K. Davis
+Elijah Cummings
+Elijah E. Cummings
+John Culberson
+John Abney Culberson
+Henry Cuellar
+Joseph Crowley
+Joe Crowley
+Eric Crawford
+Eric A. Crawford
+Rick Crawford
+Michael Crapo
+Michael D. Crapo
+Joe Courtney
+Jim Costa
+Jim Cooper
+John Conyers
+John Conyers Jr.
+Gerald Connolly
+Gerald E. Connolly
+K. Conaway
+K. Michael Conaway
+Tom Cole
+Steve Cohen
+Mike Coffman
+James Clyburn
+James E. Clyburn
+Jim Clyburn
+Emanuel Cleaver
+Emanuel Cleaver II
+Wm. Clay
+Wm. Lacy Clay
+Wm. Clay Jr.
+Yvette Clarke
+Yvette D. Clarke
+David Cicilline
+David N. Cicilline
+Judy Chu
+Judy M. Chu
+Jason Chaffetz
+Steve Chabot
+Steve J. Chabot
+Kathy Castor
+Bill Cassidy
+John Carter
+John R. Carter
+André Carson
+Michael Capuano
+Michael E. Capuano
+Shelley Capito
+Shelley Moore Capito
+Ken Calvert
+Ken S. Calvert
+George Butterfield
+George Kenneth Butterfield
+George Butterfield Jr.
+G.K. Butterfield
+Richard Burr
+Richard M. Burr
+Michael Burgess
+Michael C. Burgess
+Larry Bucshon
+Vern Buchanan
+Mo Brooks
+Robert Brady
+Robert Alan Brady
+Kevin Brady
+Kevin P. Brady
+Madeleine Bordallo
+Del. Madeleine Bordallo
+Madeleine Z. Bordallo
+John Boozman
+Roy Blunt
+Richard Blumenthal
+Earl Blumenauer
+Marsha Blackburn
+Marsha W. Blackburn
+Diane Black
+Sanford Bishop
+Sanford D. Bishop
+Sanford Bishop Jr.
+Rob Bishop
+Gus Bilirakis
+Gus M. Bilirakis
+Michael Bennet
+Michael F. Bennet
+Karen Bass
+Joe Barton
+Joe Linus Barton
+Lou Barletta
+Tammy Baldwin
+Justin Amash
+Robert Aderholt
+Robert B. Aderholt
+Joe Manchin
+Joe Manchin III
+Chris Coons
+Chris Andrew Coons
+Alan Franken
+Alan Stuart Franken
+Al Franken
+Kirsten Gillibrand
+Kirsten E. Gillibrand
+Mark Warner
+Tom Udall
+Tom S. Udall
+Jeanne Shaheen
+Pat Roberts
+James Risch
+John Reed
+John F. Reed
+Jack Reed
+Jeff Merkley
+Mitch McConnell
+James Inhofe
+James M. Inhofe
+Jim Inhofe
+Lindsey Graham
+Lindsey O. Graham
+Michael Enzi
+Michael B. Enzi
+Richard Durbin
+Richard J. Durbin
+John Cornyn
+Susan Collins
+Susan M. Collins
+Thad Cochran
+Lamar Alexander
+Roger Wicker
+Roger F. Wicker
+John Barrasso
+John A. Barrasso
+Sheldon Whitehouse
+Jon Tester
+Debbie Stabenow
+Debbie Ann Stabenow
+Bernard Sanders
+Bernie Sanders
+Bill Nelson
+Robert Menéndez
+Bob Menéndez
+Claire McCaskill
+Amy Klobuchar
+Amy Jean Klobuchar
+Orrin Hatch
+Orrin G. Hatch
+Dianne Feinstein
+Bob Corker
+Robert Casey
+Robert P. Casey
+Robert Casey Jr.
+Bob Casey
+Thomas Carper
+Thomas Richard Carper
+Benjamin Cardin
+Benjamin L. Cardin
+Maria Cantwell
+Sherrod Brown
