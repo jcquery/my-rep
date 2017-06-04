@@ -18,20 +18,8 @@ const dynamos = {
     const params = {
       AttributesToGet: ['rep_name', 'rep_id']
     }
-    const formatResults = function(err, data) {
-      if (err) {
-        throw err
-      }
-      const processed = {}
-
-      for (let item of data.Items) {
-        processed[item.rep_name.S] = item.rep_id.S.split(',')
-      }
-
-      return processed
-    }
   
-    table.scan(params, formatResults)
+    return table.scan(params).promise()
   },
 
   put: function(rep) {

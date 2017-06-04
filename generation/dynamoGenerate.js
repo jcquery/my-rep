@@ -11,10 +11,11 @@ function getReps () {
   axios.get('https://congress.api.sunlightfoundation.com/legislators?fields=aliases,bioguide_id&per_page=all')
     .then((res) => {
       console.log('got \'em')
-      return createEntries(buildMap(res.data.results))
+      createEntries(buildMap(res.data.results))
     })
     .catch((err) => {
-      throw { err }
+      console.error(err)
+      throw err
     })
 }
 function buildMap (list) {
@@ -34,25 +35,67 @@ function buildMap (list) {
     return obj
   }, {})
 }
-function createEntries (obj) {
+function createEntries (current) {
   console.log('creating database entries')
-  var promiseArr = []
+  dynamos.scan()
+    .then((data) => {
+      const processed = {}
 
-  Object.keys(obj).forEach((name) => {
-    promiseArr.push(dynamos.put({ name, id: obj[name] }))
-  })
-  console.log('created promises')
+      for (let item of data.Items) {
+        processed[item.rep_name.S] = item.rep_id.S.split(',')
+      }
 
-  Promise.map(promiseArr, (put) => put, { concurrency: 3 })
-    .then(() => {
-      fsp.writeFile(path.join(__dirname, '/congressMap.json'), JSON.stringify(obj))
+      return processed
     })
+    .then((old) => {
+      var promiseArr = []
+
+      for (let name of Object.keys(current)) {
+        if (!old[name]) {
+          // rep doesn't exist; create an entry
+          promiseArr.push(dynamos.put({ name, id: current[name] }))
+          console.log(`Creating an entry for ${name}`)
+        } else {
+          const oldArr = old[name].sort()
+          const curArr = current[name].sort()
+
+          if (oldArr.length !== curArr.length) {
+            // id arrays don't match; update entry
+            promiseArr.push(dynamos.put({ name, id: current[name] }))
+            console.log(`Updating the entry for ${name}`)
+          } else {
+            for (let i = 0; i < curArr.length; i++) {
+              if (curArr[i] !== oldArr[i]) {
+                // id array items don't match; update entry
+                promiseArr.push(dynamos.put({ name, id: current[name] }))
+                console.log(`Updating IDs for ${name}`)
+                break
+              }
+            }
+          }
+        }
+      }
+
+      for (let oldName of Object.keys(old)) {
+        if (!current[oldName]) {
+          promiseArr.push(dynamos.delete(oldName))
+          console.log(`Deleting an entry for ${oldName}`)
+        }
+      }
+
+      console.log(`${promiseArr.length} updates queued`)
+
+      Promise.map(promiseArr, (put) => put, { concurrency: 3 })
+    })
+ 
+    // .then(() => {
+    //   fsp.writeFile(path.join(__dirname, '/congressMap.json'), JSON.stringify(obj))
+    // })
     .then(() => {
       console.log('success')
     })
     .catch((err) => {
-      console.error(err)
-      throw
+      throw err
     })
 }
 
