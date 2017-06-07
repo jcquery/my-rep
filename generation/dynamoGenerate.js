@@ -4,7 +4,7 @@ const fsp = require('../src/node_modules/fs-promise')
 const axios = require('../src/node_modules/axios')
 const path = require('path')
 const Promise = require('../src/node_modules/bluebird')
-const dynamos = require('./dynamoHelpers')
+const dynamos = require('./src/dynamoHelpers')
 
 function getReps () {
   console.log('getting reps')
@@ -18,6 +18,7 @@ function getReps () {
       throw err
     })
 }
+
 function buildMap (list) {
   console.log('building a hashmap')
   return list.reduce((obj, rep) => {
@@ -35,6 +36,7 @@ function buildMap (list) {
     return obj
   }, {})
 }
+
 function createEntries (current) {
   console.log('creating database entries')
   dynamos.scan()

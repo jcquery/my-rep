@@ -28,7 +28,7 @@ const helpers = {
       console.log(res.data.officials)
     })
     .catch((err) => {
-      console.log(err.response.data)
+      console.error(err.response.data)
     })
   }
 }

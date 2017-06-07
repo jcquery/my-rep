@@ -18,11 +18,11 @@ const dynamos = {
     const params = {
       AttributesToGet: ['rep_name', 'rep_id']
     }
-  
+
     return table.scan(params).promise()
   },
 
-  put: function(rep) {
+  put: function (rep) {
     const params = {
       Item: {
         rep_name: { S: rep.name },
@@ -33,14 +33,24 @@ const dynamos = {
     return table.putItem(params).promise()
   },
 
-  delete: function(name) {
+  delete: function (name) {
     const params = {
       Key: {
         rep_name: { S: name }
       }
     }
 
-    return table.deleteItem(params).promise() 
+    return table.deleteItem(params).promise()
+  },
+
+  get: function (name) {
+    const params = {
+      Key: {
+        rep_name: { S: name }
+      }
+    }
+
+    return table.getItem(params).promise()
   }
 }
 
