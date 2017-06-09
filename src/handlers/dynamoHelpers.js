@@ -1,8 +1,8 @@
 'use strict'
-
-const dotenv = require('../src/node_modules/dotenv').config()
-const AWS = require('../src/node_modules/aws-sdk')
-const Promise = require('../src/node_modules/bluebird')
+const path = require('path')
+const dotenv = require('dotenv').config({path: path.resolve('../.env')})
+const AWS = require('aws-sdk')
+const Promise = require('bluebird')
 
 AWS.config.update({
   region: 'us-east-1',

@@ -4,7 +4,7 @@ const fsp = require('../src/node_modules/fs-promise')
 const axios = require('../src/node_modules/axios')
 const path = require('path')
 const Promise = require('../src/node_modules/bluebird')
-const dynamos = require('./src/dynamoHelpers')
+const dynamos = require('../src/handlers/dynamoHelpers')
 
 function getReps () {
   console.log('getting reps')
@@ -100,7 +100,7 @@ function createEntries (current) {
       console.log('success')
     })
     .catch((err) => {
-      throw err
+      console.error(err)
     })
 }
 
