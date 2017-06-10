@@ -1,3 +1,3 @@
 'use strict'
 
-exports.search = {}
+module.exports = {}

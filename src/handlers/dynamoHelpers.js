@@ -1,6 +1,6 @@
 'use strict'
 const path = require('path')
-const dotenv = require('dotenv').config({path: path.resolve('../.env')})
+const dotenv = require('dotenv').config({path: path.join(__dirname, '../.env')})
 const AWS = require('aws-sdk')
 const Promise = require('bluebird')
 
