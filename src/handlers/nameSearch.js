@@ -1,6 +1,8 @@
 'use strict'
 const dynamos = require('./dynamoHelpers')
 const helpers = require('./apiHelpers')
+const moment = require('moment')
+const madison = require('madison')
 
 module.exports = {
   'NameSearchIntent': function () {
@@ -18,8 +20,18 @@ module.exports = {
           return helpers.nameSearch(id)
         })
         .then((rep) => {
-          console.log(rep)
-          this.attributes['speechOutput'] = `${rep.name} is a ${rep.role} from ${rep.state}.`
+          const term = `${moment(rep.termStart).format('YYYY')} to ${moment(rep.termEnd).format('YYYY')}`
+          const state = madison.getStateNameSync(rep.state)
+          let party
+
+          if (rep.party === 'D') {
+            party = 'a Democrat'
+          } else if (rep.party === 'R') {
+            party = 'a Republican'
+          } else {
+            party = 'an Independent'
+          }
+          this.attributes['speechOutput'] = `${rep.name} is ${party} from ${state}. Their term is from ${term}.`
           this.emit(':tell', this.attributes['speechOutput'])
         })
         .catch((err) => {

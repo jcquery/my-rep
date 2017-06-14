@@ -47,8 +47,8 @@ const helpers = {
             party: rep.current_party,
             role: rep.roles[0].title.split(',')[0],
             state: rep.roles[0].state,
-            term_start: rep.roles[0].start_date,
-            term_end: rep.roles[0].end_date,
+            termStart: rep.roles[0].start_date,
+            termEnd: rep.roles[0].end_date,
             phone: rep.roles[0].phone,
             twitter: rep.twitter_account,
             office: rep.roles[0].office

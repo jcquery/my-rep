@@ -3,8 +3,8 @@
 const Alexa = require('alexa-sdk')
 let appId
 
-const searchHandlers = require('./handlers/search')
-const infoHandlers = require('./handlers/info')
+const locationHandlers = require('./handlers/locationSearch')
+const nameHandlers = require('./handlers/nameSearch')
 
 exports.handler = function (event, context, callback) {
   const alexa = Alexa.handler(event, context)
@@ -12,7 +12,7 @@ exports.handler = function (event, context, callback) {
   if (typeof process.env.DEBUG === 'undefined') {
     alexa.appId = appId
   }
-  alexa.registerHandlers(basicHandlers, infoHandlers)
+  alexa.registerHandlers(basicHandlers, nameHandlers, locationHandlers)
   alexa.execute()
 }
 
