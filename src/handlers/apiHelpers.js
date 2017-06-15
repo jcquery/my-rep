@@ -41,7 +41,7 @@ const helpers = {
       .then((res) => {
         const rep = res.data.results[0]
 
-        return new Promise(function (resolve, reject) {
+        return new Promise((resolve) => {
           resolve({
             name: `${rep.first_name} ${rep.last_name}`,
             party: rep.current_party,
