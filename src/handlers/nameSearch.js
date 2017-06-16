@@ -94,5 +94,40 @@ module.exports = {
           this.emit(':tell', 'Sorry, something went wrong.')
         })
     }
+  },
+  'NameSearchPartyRoleIntent': function () {
+    const repName = this.event.request.intent.slots.RepName.value
+
+    if (!repName) {
+      this.attributes['speechOutput'] = 'Sorry, I didn\'t catch that. Could you repeat the congressperson\'s name?'
+      this.attributes['repromptOutput'] = this.attributes['speechOutput']
+
+      this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptOutput'])
+    } else {
+      dynamos.get(repName)
+        .then((res) => {
+          const id = res.Item.rep_id.S
+          return helpers.nameSearch(id)
+        })
+        .then((rep) => {
+          let party
+
+          if (rep.party === 'D') {
+            party = 'a Democratic'
+          } else if (rep.party === 'R') {
+            party = 'a Republican'
+          } else {
+            party = 'an Independent'
+          }
+
+          this.attributes['speechOutput'] = `${rep.name} is ${party} ${rep.role}.`
+
+          this.emit(':tell', this.attributes['speechOutput'])
+        })
+        .catch((err) => {
+          console.error(err)
+          this.emit(':tell', 'Sorry, something went wrong.')
+        })
+    }
   }
 }
