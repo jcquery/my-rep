@@ -129,5 +129,30 @@ module.exports = {
           this.emit(':tell', 'Sorry, something went wrong.')
         })
     }
+  },
+  'NameSearchAddressIntent': function () {
+    const repName = this.event.request.intent.slots.RepName.value
+
+    if (!repName) {
+      this.attributes['speechOutput'] = 'Sorry, I didn\'t catch that. Could you repeat the congressperson\'s name?'
+      this.attributes['repromptOutput'] = this.attributes['speechOutput']
+
+      this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptOutput'])
+    } else {
+      dynamos.get(repName)
+        .then((res) => {
+          const id = res.Item.rep_id.S
+          return helpers.nameSearch(id)
+        })
+        .then((rep) => {
+          this.attributes['speechOutput'] = `${rep.name}'s office address is ${rep.office} in Washington, DC.`
+
+          this.emit(':tell', this.attributes['speechOutput'])
+        })
+        .catch((err) => {
+          console.error(err)
+          this.emit(':tell', 'Sorry, something went wrong.')
+        })
+    }
   }
 }
