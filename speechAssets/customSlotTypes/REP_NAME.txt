@@ -1,3 +1,8 @@
+Jimmy Gomez
+Karen Handel
+Ralph Norman
+Ralph Norman Jr.
+Greg Gianforte
 Ron Estes
 Luther Strange
 Liz Cheney
@@ -54,7 +59,7 @@ Salud Carbajal
 Jimmy Panetta
 Ro Khanna
 Andy Biggs
-Tom O'Halleran
+Tom O’Halleran
 Carol Shea-Porter
 Bradley Schneider
 Bradley S. Schneider
@@ -163,7 +168,7 @@ Marc Veasey
 Marc A. Veasey
 Roger Williams
 Joaquin Castro
-Beto O'Rourke
+Beto O’Rourke
 Randy Weber
 Randy K. Weber
 Ted Cruz
@@ -696,7 +701,6 @@ David Cicilline
 David N. Cicilline
 Judy Chu
 Judy M. Chu
-Jason Chaffetz
 Steve Chabot
 Steve J. Chabot
 Kathy Castor

@@ -1,6 +1,6 @@
 'use strict'
-const dynamos = require('./dynamoHelpers')
-const helpers = require('./apiHelpers')
+const dynamos = require('../helpers/dynamoHelpers')
+const helpers = require('../helpers/apiHelpers')
 const moment = require('moment')
 const madison = require('madison')
 

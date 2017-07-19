@@ -10,7 +10,7 @@ exports.handler = function (event, context, callback) {
   const alexa = Alexa.handler(event, context)
 
   if (typeof process.env.DEBUG === 'undefined') {
-    alexa.appId = appId
+    alexa.APP_ID = appId
   }
   alexa.registerHandlers(basicHandlers, nameHandlers, locationHandlers)
   alexa.execute()

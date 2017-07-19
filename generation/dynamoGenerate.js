@@ -4,7 +4,7 @@ const fsp = require('../src/node_modules/fs-promise')
 const axios = require('../src/node_modules/axios')
 const path = require('path')
 const Promise = require('../src/node_modules/bluebird')
-const dynamos = require('../src/handlers/dynamoHelpers')
+const dynamos = require('../src/helpers/dynamoHelpers')
 
 function getReps () {
   console.log('getting reps')
@@ -23,7 +23,7 @@ function buildMap (list) {
   console.log('building a hashmap')
   return list.reduce((obj, rep) => {
     for (let alias of rep.aliases) {
-      if (alias === null || alias.includes('Rep. ') || alias.includes('Sen. ') || alias.includes('Com. ')) {
+      if (alias === null || alias.includes('Rep. ') || alias.includes('Sen. ') || alias.includes('Com. ' || alias.includes('Del. '))) {
         continue
       }
 
@@ -87,20 +87,23 @@ function createEntries (current) {
 
       console.log(`${promiseArr.length} updates queued`)
 
-      Promise.map(promiseArr, (put) => put, { concurrency: 3 })
+      return promiseArr
     })
- 
+    .then((arr) => {
+      return Promise.map(arr, (put) => put, { concurrency: 3 })
+    })
     .then(() => {
-      console.log('writing to slot')
+      console.log('writing to slot file')
       const toWrite = Object.keys(current).join('\n')
 
-      fsp.writeFile(path.join(__dirname, '../speechAssets/customSlotTypes/REP_NAME.txt'), toWrite)
+      return fsp.writeFile(path.join(__dirname, '../speechAssets/customSlotTypes/REP_NAME.txt'), toWrite)
     })
     .then(() => {
       console.log('success')
     })
     .catch((err) => {
       console.error(err)
+      throw(err)
     })
 }
 
