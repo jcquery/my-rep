@@ -1,10 +1,11 @@
 'use strict'
+
 const path = require('path')
 const dotenv = require('dotenv').config({path: path.join(__dirname, '../.env')})
 const axios = require('axios')
 
 const helpers = {
-  addressSearch: function (address, office) {
+  addressSearch: (address, office) => {
     let roles
     const key = process.env.CIVICS_KEY
 
@@ -32,13 +33,15 @@ const helpers = {
     })
   },
 
-  nameSearch: function (id) {
+  nameSearch: (id) => {
+    console.log('before request', this)
     return axios.get(`https://api.propublica.org/congress/v1/members/${id}.json`, {
       headers: {
         'X-API-Key': process.env.PROPUBLICA_KEY
       }
     })
       .then((res) => {
+        console.log('after request', this)
         const rep = res.data.results[0]
 
         return new Promise((resolve) => {
