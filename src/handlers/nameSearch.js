@@ -74,6 +74,11 @@ const addressSearchResponse = function (rep) {
 
   this.emit(':tell', this.attributes['speechOutput'])
 }
+const phoneSearchResponse = function (rep) {
+  this.attributes['speechOutput'] = `${rep.name}'s office phone number is ${rep.phone}.`
+
+  this.emit(':tell', this.attributes['speechOutput'])
+}
 
 module.exports = {
   'NameSearchIntent': function () {
@@ -90,6 +95,9 @@ module.exports = {
   },
   'NameSearchAddressIntent': function () {
     responseTemplate.call(this, this.event.request.intent.slots.RepName.value, addressSearchResponse)
+  },
+  'NameSearchPhoneIntent': function () {
+    responseTemplate.call(this, this.event.request.intent.slots.RepName.value, phoneSearchResponse)
   },
   'MissingRep': function () {
     this.attributes['speechOutput'] = 'Sorry, I didn\'t catch that. Could you repeat the congressperson\'s name?'

@@ -34,14 +34,12 @@ const helpers = {
   },
 
   nameSearch: (id) => {
-    console.log('before request', this)
     return axios.get(`https://api.propublica.org/congress/v1/members/${id}.json`, {
       headers: {
         'X-API-Key': process.env.PROPUBLICA_KEY
       }
     })
       .then((res) => {
-        console.log('after request', this)
         const rep = res.data.results[0]
 
         return new Promise((resolve) => {
