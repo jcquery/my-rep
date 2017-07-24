@@ -1,7 +1,7 @@
 'use strict'
 
 const Alexa = require('alexa-sdk')
-let appId
+const appId = 'amzn1.ask.skill.a83f444e-1a69-483f-9b86-5c2512f1c079'
 
 const locationHandlers = require('./handlers/locationSearch')
 const nameHandlers = require('./handlers/nameSearch')
@@ -18,18 +18,14 @@ exports.handler = function (event, context, callback) {
 
 const basicHandlers = {
   'LaunchRequest': function () {
-    if (!this.attributes['address']) {
-      this.attributes['speechOutput'] = 'Welcome to MyRep. If you\'d like to set a default address, you can say, "set my address to," followed by your address. Or you can ask for the representatives for a particular address.'
-      this.attributes['repromptOutput'] = 'Sorry, I didn\'t catch that. You can ask for the representatives for a particular address, or you can set a new default search address.'
-    } else {
-      this.attributes['speechOutput'] = 'Welcome to MyRep. You can ask for the representatives for your address, or you can ask for the representatives for a particular address.'
-      this.attributes['repromptOutput'] = 'Sorry, I didn\'t catch that. You can ask for the representatives for your saved address, a particular address, or you can set a new default search address.'
-    }
+    this.attributes['speechOutput'] = 'Welcome to My Rep! You can ask for information about individual members of congress. For example, "tell me about Paul Ryan," or "which political party does Nancy Pelosi belong to?"'
+    this.attributes['repromptOutput'] = 'Sorry, I didn\'t catch that. Could you repeat what you\'re looking for?'
 
     this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptOutput'])
   },
   'AMAZON.HelpIntent': function () {
-    this.attributes['speechOutput'] = 'You can search for congressional representatives by address by asking, "who is the representative for..." followed by an address. You can also search for senators or congresspeople. If you have a saved address, you can ask, "who is my representative?" or "who are my senators?" If you do not have a saved address, you can say "set my address to..." followed by an address to save your address for future searches. To get contact and term information for a congressperson, ask for information about them by name. For example, "tell me about Maria Cantwell," or "what is Maria Cantwell\'s address?" If you\'re done searching, you can say "cancel" or "stop."'
+    this.attributes['speechOutput'] = 'You can search for general information for a congressperson by saying, "tell me about..." followed by their name. ' +
+    'You can also ask for more specific information, like Twitter username, phone number, or address.'
     this.attributes['repromptOutput'] = this.attributes['speechOutput']
 
     this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptOutput'])

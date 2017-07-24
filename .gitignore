@@ -2,3 +2,5 @@ node_modules
 yarn.lock
 .env
 .vscode
+Archive.zip
+.DS_Store

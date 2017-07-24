@@ -46,6 +46,7 @@ const helpers = {
           resolve({
             name: `${rep.first_name} ${rep.last_name}`,
             party: rep.current_party,
+            gender: rep.gender,
             role: rep.roles[0].title.split(',')[0],
             state: rep.roles[0].state,
             termStart: rep.roles[0].start_date,

@@ -20,9 +20,17 @@ const responseTemplate = function (rep, callback) {
       })
       .catch((err) => {
         console.error(err)
-        this.emit(':tell', 'Sorry, something went wrong.')
+        this.emit(':tell', 'Sorry, something went wrong. Please try again later.')
       })
   }
+}
+const cardTemplate = function (rep, str) {
+  this.emit(
+    ':tellWithCard',
+    this.attributes['speechOutput'],
+    rep.name,
+    `Role: ${rep.role}\nParty: ${rep.party}\nState: ${rep.state}${str ? `\n${str}` : ''}`
+  )
 }
 const nameSearchResponse = function (rep) {
   const term = `${moment(rep.termStart).format('YYYY')} to ${moment(rep.termEnd).format('YYYY')}`
@@ -37,14 +45,14 @@ const nameSearchResponse = function (rep) {
     party = 'an Independent'
   }
 
-  this.attributes['speechOutput'] = `${rep.name} is ${party} ${rep.role} from ${state}. Their term is from ${term}.`
-  this.emit(':tell', this.attributes['speechOutput'])
+  this.attributes['speechOutput'] = `${rep.name} is ${party} ${rep.role} from ${state}. ${rep.gender === 'M' ? 'His' : 'Her'} term is from ${term}.`
+  cardTemplate.call(this, rep, `Term: ${term}`)
 }
 const termSearchResponse = function (rep) {
   const term = `${moment(rep.termStart).format('YYYY')} to ${moment(rep.termEnd).format('YYYY')}`
 
   this.attributes['speechOutput'] = `${rep.name}'s term is from ${term}.`
-  this.emit(':tell', this.attributes['speechOutput'])
+  cardTemplate.call(this, rep, `Term: ${term}`)
 }
 const twitterSearchResponse = function (rep) {
   if (rep.twitter) {
@@ -52,7 +60,7 @@ const twitterSearchResponse = function (rep) {
   } else {
     this.attributes['speechOutput'] = `${rep.name} is not on Twitter.`
   }
-  this.emit(':tell', this.attributes['speechOutput'])
+  cardTemplate.call(this, rep, `Twitter Username: ${rep.twitter}`)
 }
 const partyRoleSearchResponse = function (rep) {
   let party
@@ -67,17 +75,17 @@ const partyRoleSearchResponse = function (rep) {
 
   this.attributes['speechOutput'] = `${rep.name} is ${party} ${rep.role}.`
 
-  this.emit(':tell', this.attributes['speechOutput'])
+  cardTemplate.call(this, rep)
 }
 const addressSearchResponse = function (rep) {
   this.attributes['speechOutput'] = `${rep.name}'s office address is ${rep.office} in Washington, DC.`
 
-  this.emit(':tell', this.attributes['speechOutput'])
+  cardTemplate.call(this, rep, `Office Address: ${rep.address}, Washington DC`)
 }
 const phoneSearchResponse = function (rep) {
   this.attributes['speechOutput'] = `${rep.name}'s office phone number is ${rep.phone}.`
 
-  this.emit(':tell', this.attributes['speechOutput'])
+  cardTemplate.call(this, rep, `Office Phone: ${rep.phone}`)
 }
 
 module.exports = {
