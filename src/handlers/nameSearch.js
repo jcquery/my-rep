@@ -9,9 +9,12 @@ const responseTemplate = function (rep, callback) {
   if (!rep) {
     this.emit('MissingRep')
   } else {
+    rep = rep.toLowerCase()
+
     return dynamos.get(rep)
       .then((res) => {
         if (!res.Item) {
+          console.log('Could not recognize: ', rep)
           this.emit('SearchFailure')
         } else {
           return helpers.nameSearch(res.Item.rep_id.S)
@@ -114,7 +117,7 @@ module.exports = {
     this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptOutput'])
   },
   'SearchFailure': function () {
-    this.attributes['speechOutput'] = 'Sorry, I couldn\'t find a congressperson by that name.' +
+    this.attributes['speechOutput'] = 'Sorry, I couldn\'t find a congressperson by that name. ' +
     'If they are a current congressperson, try repeating their name or using a different alias of theirs.'
     this.attributes['repromptOutput'] = this.attributes['speechOutput']
 

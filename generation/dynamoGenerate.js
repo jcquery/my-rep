@@ -26,6 +26,7 @@ function buildMap (list) {
       if (alias === null || alias.includes('Rep. ') || alias.includes('Sen. ') || alias.includes('Com. ' || alias.includes('Del. '))) {
         continue
       }
+      alias = alias.toLowerCase()
 
       if (!obj[alias]) {
         obj[alias] = [rep.bioguide_id]
@@ -94,9 +95,17 @@ function createEntries (current) {
     })
     .then(() => {
       console.log('writing to slot file')
-      const toWrite = Object.keys(current).join('\n')
+      const toWrite = Object.keys(current).map((name) => {
+        return {
+          'id': null,
+          'name': {
+            'value': name,
+            'synonyms': []
+          }
+        }
+      })
 
-      return fsp.writeFile(path.join(__dirname, '../speechAssets/customSlotTypes/REP_NAME.txt'), toWrite)
+      return fsp.writeFile(path.join(__dirname, '../speechAssets/customSlotTypes/REP_NAME.json'), JSON.stringify(toWrite))
     })
     .then(() => {
       console.log('success')
