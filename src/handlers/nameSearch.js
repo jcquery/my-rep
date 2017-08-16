@@ -81,9 +81,17 @@ const partyRoleSearchResponse = function (rep) {
   cardTemplate.call(this, rep)
 }
 const addressSearchResponse = function (rep) {
-  this.attributes['speechOutput'] = `${rep.name}'s office address is ${rep.office} in Washington, DC.`
+  let template
 
-  cardTemplate.call(this, rep, `Office Address: ${rep.address}, Washington DC`)
+  if (rep.office) {
+    template = `Office Address: ${rep.office}, Washington DC`
+    this.attributes['speechOutput'] = `${rep.name}'s office address is ${rep.office} in Washington, DC.`
+  } else {
+    template = ''
+    this.attributes['speechOutput'] = `Sorry, I don't have information about ${rep.name}'s office address.`
+  }
+
+  cardTemplate.call(this, rep, template)
 }
 const phoneSearchResponse = function (rep) {
   this.attributes['speechOutput'] = `${rep.name}'s office phone number is ${rep.phone}.`
