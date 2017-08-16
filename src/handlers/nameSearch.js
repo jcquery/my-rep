@@ -18,7 +18,7 @@ const responseTemplate = function (rep, callback) {
           this.emit('SearchFailure')
         } else {
           return helpers.nameSearch(res.Item.rep_id.S)
-            .then(callback.bind(this))
+            .then(callback.bind(this, rep))
         }
       })
       .catch((err) => {
@@ -35,7 +35,7 @@ const cardTemplate = function (rep, str) {
     `Role: ${rep.role}\nParty: ${rep.party}\nState: ${rep.state}${str ? `\n${str}` : ''}`
   )
 }
-const nameSearchResponse = function (rep) {
+const nameSearchResponse = function (name, rep) {
   const term = `${moment(rep.termStart).format('YYYY')} to ${moment(rep.termEnd).format('YYYY')}`
   const state = madison.getStateNameSync(rep.state)
   let party
@@ -48,24 +48,24 @@ const nameSearchResponse = function (rep) {
     party = 'an Independent'
   }
 
-  this.attributes['speechOutput'] = `${rep.name} is ${party} ${rep.role} from ${state}. ${rep.gender === 'M' ? 'His' : 'Her'} term is from ${term}.`
+  this.attributes['speechOutput'] = `${name} is ${party} ${rep.role} from ${state}. ${rep.gender === 'M' ? 'His' : 'Her'} term is from ${term}.`
   cardTemplate.call(this, rep, `Term: ${term}`)
 }
-const termSearchResponse = function (rep) {
+const termSearchResponse = function (name, rep) {
   const term = `${moment(rep.termStart).format('YYYY')} to ${moment(rep.termEnd).format('YYYY')}`
 
-  this.attributes['speechOutput'] = `${rep.name}'s term is from ${term}.`
+  this.attributes['speechOutput'] = `${name}'s term is from ${term}.`
   cardTemplate.call(this, rep, `Term: ${term}`)
 }
-const twitterSearchResponse = function (rep) {
+const twitterSearchResponse = function (name, rep) {
   if (rep.twitter) {
-    this.attributes['speechOutput'] = `${rep.name}'s Twitter username is ${rep.twitter}.`
+    this.attributes['speechOutput'] = `${name}'s Twitter username is ${rep.twitter}.`
   } else {
-    this.attributes['speechOutput'] = `${rep.name} is not on Twitter.`
+    this.attributes['speechOutput'] = `${name} is not on Twitter.`
   }
   cardTemplate.call(this, rep, `Twitter Username: ${rep.twitter}`)
 }
-const partyRoleSearchResponse = function (rep) {
+const partyRoleSearchResponse = function (name, rep) {
   let party
 
   if (rep.party === 'D') {
@@ -76,25 +76,25 @@ const partyRoleSearchResponse = function (rep) {
     party = 'an Independent'
   }
 
-  this.attributes['speechOutput'] = `${rep.name} is ${party} ${rep.role}.`
+  this.attributes['speechOutput'] = `${name} is ${party} ${rep.role}.`
 
   cardTemplate.call(this, rep)
 }
-const addressSearchResponse = function (rep) {
+const addressSearchResponse = function (name, rep) {
   let template
 
   if (rep.office) {
     template = `Office Address: ${rep.office}, Washington DC`
-    this.attributes['speechOutput'] = `${rep.name}'s office address is ${rep.office} in Washington, DC.`
+    this.attributes['speechOutput'] = `${name}'s office address is ${rep.office} in Washington, DC.`
   } else {
     template = ''
-    this.attributes['speechOutput'] = `Sorry, I don't have information about ${rep.name}'s office address.`
+    this.attributes['speechOutput'] = `Sorry, I don't have information about ${name}'s office address.`
   }
 
   cardTemplate.call(this, rep, template)
 }
-const phoneSearchResponse = function (rep) {
-  this.attributes['speechOutput'] = `${rep.name}'s office phone number is ${rep.phone}.`
+const phoneSearchResponse = function (name, rep) {
+  this.attributes['speechOutput'] = `${name}'s office phone number is ${rep.phone}.`
 
   cardTemplate.call(this, rep, `Office Phone: ${rep.phone}`)
 }
